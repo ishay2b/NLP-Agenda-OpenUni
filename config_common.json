@@ -1,0 +1,16 @@
+{
+    "ignore_words_path":"$(ROOT)/ignore_words_list.txt",
+    "trival_words_path":"$(ROOT)/trival_words.txt",
+    "data_dir":"$(ROOT)/data/",
+    "model_architecture":"conv",
+    "train_dir":"$(ROOT)/train/$(model_architecture)/",
+    "batch_size":50,
+    "save_step_interval":1000,
+    "how_many_training_steps":"20000,26000",
+    "learning_rate":"0.0001,0.00001",
+    "check_nans":true,
+    "validation_percentage":10,
+    "testing_percentage":10,
+
+    "eof":true
+}
