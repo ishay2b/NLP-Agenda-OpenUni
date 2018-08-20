@@ -1,9 +1,27 @@
 {
+    "enwiki_dbow":"$(ROOT)/trained_nets/enwiki_dbow/doc2vec.bin",
+
     "ignore_words_path":"$(ROOT)/ignore_words_list.txt",
     "trival_words_path":"$(ROOT)/trival_words.txt",
     "data_dir":"$(ROOT)/data/",
+    "cache_path":"$(ROOT)/cache/",
+
+    "train_folders":[
+        "$(data_dir)/conservative/fox",
+        "$(data_dir)/conservative/national_review",
+        "$(data_dir)/liberal/politico_parsed",
+        "$(data_dir)/liberal/think_progress"
+    ],
+    "test_folders":[
+        "$(data_dir)/conservative/westernjournal",
+        "$(data_dir)/liberal/demo",
+        "$(data_dir)/liberal/nytimes"
+    ],
+
+    "labels":["conservative", "liberal"],
     "model_architecture":"conv",
     "train_dir":"$(ROOT)/train/$(model_architecture)/",
+
     "batch_size":50,
     "save_step_interval":1000,
     "how_many_training_steps":"20000,26000",
