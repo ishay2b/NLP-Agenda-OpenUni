@@ -1,6 +1,7 @@
 {
     "enwiki_dbow":"$(ROOT)/trained_nets/enwiki_dbow/doc2vec.bin",
-
+    "apnews_dbow":"$(ROOT)/trained_nets/apnews_dbow/doc2vec.bin",
+    "self_trained":"$(ROOT)/self_trained/",
     "ignore_words_path":"$(ROOT)/ignore_words_list.txt",
     "trival_words_path":"$(ROOT)/trival_words.txt",
     "data_dir":"$(ROOT)/data/",

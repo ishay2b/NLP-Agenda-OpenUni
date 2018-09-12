@@ -1,18 +1,15 @@
-#python
+#!python
 from six import string_types
 import matplotlib.pylab as plt
 import itertools
 import numpy as np
 import json
 import subprocess
-import datetime
 import os
 import glob
 import sys
 import platform
 import errno
-import glob
-import sys
 
 
 def get_root():
@@ -80,6 +77,9 @@ def get_config(mode='realtime'):
     except Exception as e:
         pass # Probably already exists
 
+
+    if not os.path.isdir(config['self_trained']): os.makedirs(config['self_trained'])
+    if not os.path.isdir(config['cache_path']): os.makedirs(config['cache_path'])
 
     mapping = Mapping() #Easy wrrapper to allow attributes as well as dict
     mapping.update(config)
