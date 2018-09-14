@@ -1,6 +1,5 @@
 **Conservative/Liberal agenda predction using NLP**
-Few political articles were parsed from websites with known agenda to be used for training.
 
-We tested other websites with known agenda to benchmark our predction. This is the on going research code.
+We parsed few political web sites with known Conservative/Liberal articles from the opinions section to see if we can predict the auther's agenda by using NLP.
 
 See src/ notebooks for more info.
